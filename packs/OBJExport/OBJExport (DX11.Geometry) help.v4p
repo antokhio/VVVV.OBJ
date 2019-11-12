@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha38.2.dtd" >
-   <PATCH nodename="C:\Users\Smart\source\repos\VVVV.OBJ\packs\OBJExport\OBJExport (DX11.Geometry) help.v4p" systemname="OBJExport (DX11.Geometry Advanced) help" filename="C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\OBJExporter\OBJExport (DX11.Geometry Advanced) help.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="C:\vvvv\vvvv_beta_38.2-4283_preview_x64\packs\OBJExport\nodes\OBJExport (DX11.Geometry) help.v4p" systemname="OBJExport (DX11.Geometry Advanced) help" filename="C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\OBJExporter\OBJExport (DX11.Geometry Advanced) help.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="0" top="5040" width="8595" height="10530">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
@@ -56,22 +56,6 @@
    <PIN pinname="Transform Out" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="OBJExport (DX11.Geometry Advanced)" filename="OBJExport (DX11.Geometry Advanced).v4p" nodename="OBJExport (DX11.Geometry Advanced)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="2685" top="5565" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
-   </PIN>
-   <BOUNDS type="Window" left="4860" top="5250" width="15210" height="10005">
-   </BOUNDS>
-   <PIN pinname="Transform In" visible="1">
-   </PIN>
-   <PIN pinname="FilePath" visible="1">
-   </PIN>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   <PIN pinname="Write" visible="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="39" systemname="IOBox (String)">
    <BOUNDS type="Node" left="225" top="225" width="5100" height="450">
    </BOUNDS>
@@ -84,8 +68,6 @@
    <PIN pinname="Size" slicecount="1" visible="1" values="14">
    </PIN>
    </NODE>
-   <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="38" dstpinname="Transform In">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="40" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3165" top="2775" width="795" height="240">
    </BOUNDS>
@@ -106,8 +88,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="38" dstpinname="FilePath">
-   </LINK>
    <NODE systemname="Cons (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Cons (DX11.Geometry)" componentmode="Hidden" id="42">
    <BOUNDS type="Node" left="990" top="4590" width="100" height="100">
    </BOUNDS>
@@ -124,8 +104,6 @@
    <PIN pinname="Input 3" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="38" dstpinname="Geometry">
-   </LINK>
    <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="43">
    <BOUNDS type="Node" left="2565" top="9375" width="100" height="100">
    </BOUNDS>
@@ -163,7 +141,7 @@
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="45">
    <BOUNDS type="Node" left="3045" top="6945" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -172,8 +150,6 @@
    <PIN pinname="Switch" visible="1" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Geometry Out" dstnodeid="45" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3660" top="3300" width="480" height="480">
    </BOUNDS>
@@ -194,8 +170,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Write">
-   </LINK>
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="44" dstpinname="Geometry">
    </LINK>
    <PACK Name="dx11.particles" Version="1.0.6">
@@ -289,5 +263,49 @@
    <LINK srcnodeid="53" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Reload">
    </LINK>
    <LINK srcnodeid="57" srcpinname="Geometry Out" dstnodeid="42" dstpinname="Input 1">
+   </LINK>
+   <NODE systemname="OBJExport (DX11.Geometry)" filename="%VVVV%\packs\OBJExport\nodes\OBJExport (DX11.Geometry).v4p" nodename="OBJExport (DX11.Geometry)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="2685" top="5565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Geometry" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="4860" top="5250" width="15210" height="10005">
+   </BOUNDS>
+   <PIN pinname="Transform In" visible="1">
+   </PIN>
+   <PIN pinname="FilePath" visible="1">
+   </PIN>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="Write" visible="1">
+   </PIN>
+   <PIN pinname="Sucess" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Transform Out" dstnodeid="38" dstpinname="Transform In">
+   </LINK>
+   <LINK srcnodeid="40" srcpinname="Output String" dstnodeid="38" dstpinname="FilePath">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Output" dstnodeid="38" dstpinname="Geometry">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Geometry Out" dstnodeid="45" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Write">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="58">
+   <BOUNDS type="Box" left="1860" top="6330" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1860" top="6330" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Sucess" dstnodeid="58" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
