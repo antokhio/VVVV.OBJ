@@ -1,0 +1,6 @@
+C:\Users\Smart\source\repos\VVVV.OBJ\packs\OBJExport\plugins\VVVV.OBJ.dll
+C:\Users\Smart\source\repos\VVVV.OBJ\packs\OBJExport\plugins\VVVV.OBJ.pdb
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\obj\x64\Debug\VVVV.OBJ.csproj.CoreCompileInputs.cache
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\obj\x64\Debug\VVVV.OBJ.dll
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\obj\x64\Debug\VVVV.OBJ.pdb
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\obj\x64\Debug\VVVV.OBJ.csprojAssemblyReference.cache
