@@ -76,7 +76,7 @@ namespace VVVV.OBJ
                 {
                     sb.Append("vt ");
                     sb.Append(uv.x.ToString("0.0000", CultureInfo.InvariantCulture) + " ");
-                    sb.Append((1-uv.y).ToString("0.0000", CultureInfo.InvariantCulture) + " ");
+                    sb.Append((1-uv.y).ToString("0.0000", CultureInfo.InvariantCulture));
                     sb.AppendLine();
                 }
 

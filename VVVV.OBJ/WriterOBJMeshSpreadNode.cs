@@ -84,7 +84,7 @@ namespace VVVV.OBJ
                     {
                         sb.Append("vt ");
                         sb.Append(FUV[j].x.ToString("0.0000", CultureInfo.InvariantCulture) + " ");
-                        sb.Append((1 - FUV[j].y).ToString("0.0000", CultureInfo.InvariantCulture) + " ");
+                        sb.Append((1 - FUV[j].y).ToString("0.0000", CultureInfo.InvariantCulture));
                         sb.AppendLine();
                     }
 

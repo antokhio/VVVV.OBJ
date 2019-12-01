@@ -1,0 +1,4 @@
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\bin\x64\Release\VVVV.OBJ.dll
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\bin\x64\Release\VVVV.OBJ.pdb
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\obj\x64\Release\VVVV.OBJ.dll
+C:\Users\Smart\source\repos\VVVV.OBJ\VVVV.OBJ\obj\x64\Release\VVVV.OBJ.pdb
