@@ -11,7 +11,7 @@ SamplerState s0: IMMUTABLE
 };
 
 float4x4 tW : WORLD;
-
+float4x4 tTex <string uiname="Texture Transform"; bool uvspace=true; >;
 struct VS_IN
 {
 	float4 pos : POSITION;
@@ -32,7 +32,7 @@ VS_OUT VS(VS_IN input)
 	
 	output.pos = mul(input.pos,tW).xyz;
 	output.normal = input.normal.xyz;
-	output.uv = input.uv.xy;
+	output.uv = mul(float4(input.uv.xy,0,1),tTex).xy;
 	
     return output;
 }
